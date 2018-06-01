@@ -10,9 +10,9 @@ var point_var = null;
 function chartDrawn() {
   d3.select('#add-point')
             .on('click', ()=>{
-              r = d3.select('#real').property('value')
-              i = d3.select('#imaginary').property('value')
-              color = d3.select('#color').property('value')
+              var r = d3.select('#real').property('value')
+              var i = d3.select('#imaginary').property('value')
+              var color = d3.select('#color').property('value')
               chart.addPoint(r,i,color);
             });
 
